@@ -12,7 +12,7 @@
     "@eslint/js": "8",
     "chai": "4",
     "eslint": "8",
-    "globals": "^16.4.0",
+    "globals": "^15.1.0",
     "mocha": "^11.7.4",
     "supertest": "^7.1.4"
   },
