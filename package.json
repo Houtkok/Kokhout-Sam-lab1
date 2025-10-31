@@ -6,7 +6,7 @@
   "author": "Kokhout-Sam <Houtkok123@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "4"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
