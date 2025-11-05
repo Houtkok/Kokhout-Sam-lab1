@@ -8,3 +8,12 @@ describe("GET /", () => {
     expect(res.text).to.equal("Hello, GitHub Actions!");
   });
 });
+
+describe("GET /test", () => {
+    it("should not return Hello, GitHub Actions!", async () => {
+      const res = await request(app).get("/test");
+      expect(res.status).to.equal(200);
+      expect(res.text).to.equal("Hello, GitHub Actions!");
+    });
+  });
+  

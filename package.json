@@ -14,11 +14,20 @@
     "eslint": "8",
     "globals": "^15.1.0",
     "mocha": "^11.7.4",
-    "supertest": "^7.1.4"
+    "supertest": "^7.1.4",
+    "nyc": "^15.1.0"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha --exit",
+    "test": "nyc mocha --exit",
     "lint": "eslint . --ext .js"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "report-dir": "./coverage"
   }
 }
