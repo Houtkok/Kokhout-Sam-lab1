@@ -3,7 +3,4 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Hello, GitHub Actions!");
 });
-app.get("/test", (req, res) => {
-  res.send("Hello, CI/CD!");
-});
 module.exports = app;
